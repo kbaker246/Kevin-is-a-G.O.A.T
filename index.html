@@ -2,14 +2,25 @@
 <html>
     <head></head>
   <body>
-      <h1>Kevin is a G.O.A.T</h1>
-      <input type="button" value="More about Kevin" onclick="alert('kevin is the greatest')"/>
-      <input type="button" value="Active" onclick="Mr. Budi is trash()"/>
-      
-  </body>  
+      <h1 id="da truth">Kevin is a <span id="stuff">G.O.A.T</span></h1>
+     <input type="button" value="More about the G.O.A.T" onclick="alert('Kevin really is a G.O.A.T')" />
+     <input type="button" value="Button of greatness" onclick="greatness()"/>
+     <input type="button" value="Mr.Budi" onclick="changeSentence()"/>
+     <input type="button" value= "Kevin is a..." onclick="changeAdjective()"/>
+     </body> 
   <script>
-      function G.O.A.T(){
-          alert("this code will achieve greatness if you click on it.");
-      }
+  function goat(){
+      alert("I will achieve excellence as soon as The G.O.A.t clicks here");
+  }
+  function changeSentence(){
+      document.getElementById("da truth"). innerHTML= "Mr. Budi trash like the lakers"
+  }
+    function greatness(){
+        alert("Kevin is the goat and he achieve excellence.");
+    }
+    function changeAdjective(){
+        var x = prompt("Give me a new word to describe Kevin");
+        document.getElementById("stuff").innerHTML = x;
+    }
   </script>
 </html>
